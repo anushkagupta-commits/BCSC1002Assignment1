@@ -40,4 +40,8 @@ public class Book {
     public void setIsbnNumber(String isbnNumber) {
         this.isbnNumber = isbnNumber;
     }
+
+    public String toString() {
+        return " Book Name :" + getBookName() + "," + " Author Name :" + getAuthorName() + "," + " ISBN number :" + getIsbnNumber();
+    }
 }
