@@ -10,7 +10,7 @@ import definitions.Book;
 
 public class FrontDesk {
     public static void main(String[] args) {
-        Book book = new Book();
+        Book book = new Book("Object Oriented Programming", "DS Guru", "230569874201");
         System.out.println(book);
     }
 }
