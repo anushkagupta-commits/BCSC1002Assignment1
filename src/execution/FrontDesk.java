@@ -11,5 +11,6 @@ import definitions.Book;
 public class FrontDesk {
     public static void main(String[] args) {
         Book book = new Book();
+        System.out.println("Book name : " + book.getBookName() + "," + "Author name : " + book.getAuthorName() + "," + "13 digit isbn number :" + book.getIsbnNumber());
     }
 }
