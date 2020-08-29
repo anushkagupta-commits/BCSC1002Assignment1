@@ -7,41 +7,43 @@
 package definitions;
 
 public class Book {
-    private String bookName;
-    private String authorName;
-    private String isbnNumber;
+    private String bookNames;
+    private String authorNames;
+    private String isbnNumbers;
 
-    public Book(String bookName, String authorName, String isbnNumber) {
-        this.bookName = bookName;
-        this.authorName = authorName;
-        this.isbnNumber = isbnNumber;
+    public Book() {
+        this.bookNames = "Operating System";
+        this.authorNames = "Robert Love";
+        this.isbnNumbers = "2563140789632";
     }
 
-    public String getBookName() {
-        return bookName;
+    public Book(String bookNames, String authorNames, String isbnNumbers) {
+        this.bookNames = bookNames;
+        this.authorNames = authorNames;
+        this.isbnNumbers = isbnNumbers;
     }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
+    public String getBookNames() {
+        return bookNames;
     }
 
-    public String getAuthorName() {
-        return authorName;
+    public void setBookNames(String bookNames) {
+        this.bookNames = bookNames;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
+    public String getAuthorNames() {
+        return authorNames;
     }
 
-    public String getIsbnNumber() {
-        return isbnNumber;
+    public void setAuthorNames(String authorNames) {
+        this.authorNames = authorNames;
     }
 
-    public void setIsbnNumber(String isbnNumber) {
-        this.isbnNumber = isbnNumber;
+    public String getIsbnNumbers() {
+        return isbnNumbers;
     }
 
-    public String toString() {
-        return " Book Name :" + getBookName() + "," + " Author Name :" + getAuthorName() + "," + " ISBN number :" + getIsbnNumber();
+    public void setIsbnNumbers(String isbnNumbers) {
+        this.isbnNumbers = isbnNumbers;
     }
 }

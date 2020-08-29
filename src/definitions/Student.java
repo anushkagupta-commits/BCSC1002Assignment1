@@ -6,5 +6,7 @@
  * */
 package definitions;
 
+
 public class Student {
+
 }
