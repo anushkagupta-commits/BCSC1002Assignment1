@@ -23,8 +23,20 @@ public class Library {
         this.currentlyAvailable = currentlyAvailable;
     }
 
-
     public String toString() {
         return Arrays.toString(currentlyAvailable);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Arrays.equals(getCurrentlyAvailable(), library.getCurrentlyAvailable());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getCurrentlyAvailable());
     }
 }
