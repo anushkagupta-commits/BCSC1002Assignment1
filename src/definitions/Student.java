@@ -6,7 +6,12 @@
  * */
 package definitions;
 
-
 public class Student {
-
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String fullName;
+    private long universityRollNo;
+    private int bookIssued;
+    private Book[] names;
 }
