@@ -8,4 +8,12 @@ package definitions;
 
 public class Library {
     private Book[] currentlyAvailable;
+
+    public Book[] getCurrentlyAvailable() {
+        return currentlyAvailable;
+    }
+
+    public void setCurrentlyAvailable(Book[] currentlyAvailable) {
+        this.currentlyAvailable = currentlyAvailable;
+    }
 }
