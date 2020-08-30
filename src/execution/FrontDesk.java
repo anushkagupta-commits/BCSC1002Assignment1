@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Anushka Gupta
  *  Date: 21/08/20
  *  Time: 3:50 PM
  *  File Name : FrontDesk.java
@@ -35,7 +35,7 @@ public class FrontDesk {
 
         switch (chooseNo) {
             case NEW_BOOK:
-                System.out.println("enter the anme of the book which you want to issue");
+                System.out.println("enter the name of the book which you want to issue");
                 bookNames = scanner.nextLine();
                 library.checkBooks(bookNames);
                 break;
@@ -45,6 +45,7 @@ public class FrontDesk {
                 library.returnBooks(bookNames);
                 break;
             case ALL_ISSUED_BOOK:
+                student.getNames();
                 break;
             case EXIT:
                 break;

@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Anushka Gupta
  *  Date: 21/08/20
  *  Time: 3:50 PM
  *  File Name : Library.java
@@ -13,6 +13,9 @@ public class Library {
 
     public Library() {
         this.currentlyAvailable = new Book[30];
+        for (int index = 0; index < currentlyAvailable.length; index++) {
+            currentlyAvailable[index] = new Book("books which are available are :" + (index + 1));
+        }
     }
 
     public Book[] getCurrentlyAvailable() {
