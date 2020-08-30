@@ -6,10 +6,12 @@
  * */
 package execution;
 
-import definitions.Book;
-
 public class FrontDesk {
+    public static final int EXIT = 4;
+    private static final int NEW_BOOK = 3;
+    private static final int PREVIOUSLY_ISSUED_BOOK = 2;
+    private static final int ALL1_ISSUED_BOOK = 1;
+
     public static void main(String[] args) {
-        Book book = new Book();
     }
 }
