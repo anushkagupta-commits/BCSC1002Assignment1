@@ -19,6 +19,7 @@ public class FrontDesk {
     private static final int ALL_ISSUED_BOOK = 1;
 
     public static void main(String[] args) {
+        System.out.println("enter any no 1, 2, 3, 4");
         Scanner scanner = new Scanner(System.in);
         int chooseNo = scanner.nextInt();
         String bookNames;
@@ -33,24 +34,32 @@ public class FrontDesk {
         System.out.println("3. Show me all my issues books.");
         System.out.println("4. Exit.");
 
-        switch (chooseNo) {
-            case NEW_BOOK:
-                System.out.println("enter the name of the book which you want to issue");
-                bookNames = scanner.nextLine();
-                library.checkBooks(bookNames);
-                break;
-            case PREVIOUSLY_ISSUED_BOOK:
-                System.out.println("enter the name of the book which you want to return");
-                bookNames = scanner.nextLine();
-                library.returnBooks(bookNames);
-                break;
-            case ALL_ISSUED_BOOK:
-                student.getNames();
-                break;
-            case EXIT:
-                break;
-            default:
-                System.out.println("the no you entered is invalid please enter the right no");
+        if (chooseNo <= 4) {
+            switch (chooseNo) {
+                case NEW_BOOK:
+                    System.out.println("enter the name of the book which you want to issue");
+                    bookNames = scanner.nextLine();
+                    scanner.nextLine();
+                    library.checkBooks(bookNames);
+                    break;
+                case PREVIOUSLY_ISSUED_BOOK:
+                    System.out.println("enter the name of the book which you want to return");
+                    scanner.nextLine();
+                    bookNames = scanner.nextLine();
+                    library.returnBooks(bookNames);
+                    break;
+                case ALL_ISSUED_BOOK:
+                    student.getNames();
+                    break;
+                case EXIT:
+                    break;
+            }
+        } else {
+
+            System.out.println("the no you entered is invalid please enter the right no");
         }
+        scanner.close();
     }
 }
+
+
