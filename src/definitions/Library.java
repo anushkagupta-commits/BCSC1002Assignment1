@@ -45,7 +45,16 @@ public class Library {
      *
      * @param bookNames it ask the user to write the book name which you want to issue.
      */
-    public void checkBook(String bookNames) {
+    public void checkBooks(String bookNames) {
         System.out.println(bookNames + "you issued the book from the library");
+    }
+
+    /**
+     * This method is used to return the issued book
+     *
+     * @param bookNames is ask the user to enter the book name which you want to return.
+     */
+    public void returnBooks(String bookNames) {
+        System.out.println(bookNames + "your book is returned");
     }
 }

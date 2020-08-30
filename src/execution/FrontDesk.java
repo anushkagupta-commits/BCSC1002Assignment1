@@ -37,11 +37,12 @@ public class FrontDesk {
             case NEW_BOOK:
                 System.out.println("enter the anme of the book which you want to issue");
                 bookNames = scanner.nextLine();
-                library.checkBook(bookNames);
+                library.checkBooks(bookNames);
                 break;
             case PREVIOUSLY_ISSUED_BOOK:
                 System.out.println("enter the name of the book which you want to return");
                 bookNames = scanner.nextLine();
+                library.returnBooks(bookNames);
                 break;
             case ALL_ISSUED_BOOK:
                 break;
