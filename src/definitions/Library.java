@@ -39,4 +39,13 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getCurrentlyAvailable());
     }
+
+    /**
+     * This method is used to issue the book from the library
+     *
+     * @param bookNames it ask the user to write the book name which you want to issue.
+     */
+    public void checkBook(String bookNames) {
+        System.out.println(bookNames + "you issued the book from the library");
+    }
 }
